@@ -9,7 +9,12 @@
 
 </div>
 
-A Fully Async-based ML model API.
+A Fully Async-based ML Fake news detection API.
+
+## NoteBook
+
+- Download [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/u/0/uc?id=0B7XkCwpI5KDYNlNUTTlSS21pQmM) for the **LSTM** model and move it into the `notebook` directory.
+- Download [the dataset from kaggle](https://www.kaggle.com/datasets/stevenpeutz/misinformation-fake-news-text-dataset-79k?resource=download) and move it into the `notebook/data-set` directory.
 
 ## Development Requirements
 
@@ -95,10 +100,6 @@ make run
 ## Access Redocs Documentation
 
 > <http://localhost:8000/redocs>
-
-## NoteBook
-
-Download [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/u/0/uc?id=0B7XkCwpI5KDYNlNUTTlSS21pQmM) for the **LSTM** model and move it into the `notebook` directory.
 
 ## Deployments
 
