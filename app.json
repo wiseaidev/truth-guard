@@ -1,0 +1,35 @@
+{
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ],
+  "description": "A Fully Async-based backend for Truth Guard built using FastAPI, and friends.",
+  "env": {
+    "DEBUG": {
+      "description": "This environment variable defines the debug level.`` means production. `info` to access the docs.",
+      "required": false,
+      "value": ""
+    },
+    "CORS_ORIGINS": {
+      "description": "Comma separated urls of the deployed client.",
+      "required": true
+    }
+  },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "free"
+    }
+  },
+  "image": "heroku/python",
+  "keywords": [
+    "fastapi",
+    "mongodb",
+    "deta",
+    "api"
+  ],
+  "name": "truth-guard",
+  "repository": "https://github.com/wiseaidev/truth-guard",
+  "success_url": "/docs"
+}

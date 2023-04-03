@@ -1,0 +1,17 @@
+{
+  "description": "A Fully Async-based backend for Truth Guard built using FastAPI and friends.",
+  "env": [
+    {
+      "description": "Comma separated urls of the deployed client.",
+      "key": "CORS_ORIGINS",
+      "required": true
+    },
+    {
+      "description": "This environment variable defines the debug level.`` means production. `info` to access the docs.",
+      "key": "DEBUG",
+      "required": true
+    }
+  ],
+  "name": "truth-guard",
+  "runtime": "python3.9"
+}

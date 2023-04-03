@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "truth-guard"
+version = "0.1.0"
+description = "A fully async based backend for Truth Guard built using FastAPI and friends."
+authors = ["wiseaidev <business@wiseai.dev>"]
+license = "Apache"
+readme = "README.md"
+repository = "https://github.com/wiseaidev/truth-guard"
+homepage = "https://github.com/wiseaidev/truth-guard"
+documentation = ""
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+]
+keywords = ["python", "fastapi", "Truth Guard"]
+packages = [
+    { include = "app" },
+    { include = "LICENSE" },
+    { include = "README.md" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.9.10"
+fastapi = {extras = ["uvicorn"], version = "^0.87.0"}
+uvicorn = {extras = ["standard"], version = "^0.20.0"}
+pydantic = {extras = ["email"], version = "^1.10.2"}
+scikit-learn = "^1.2.2"
+pandas = "^1.5.3"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.2.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+server = "app.main:serve"
+
+[tool.black]
+line-length = 79
