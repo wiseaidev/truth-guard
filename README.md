@@ -9,12 +9,22 @@
 
 </div>
 
+
+<div align="center">
+
+![banner](./assets/banner.png)
+
+</div>
+
+banner.png
+
 A Fully Async-based ML Fake news detection API.
 
 ## NoteBook
 
 - Download [GoogleNews-vectors-negative300.bin.gz](https://drive.google.com/u/0/uc?id=0B7XkCwpI5KDYNlNUTTlSS21pQmM) for the **LSTM** model and move it into the `notebook` directory.
 - Download [the dataset from kaggle](https://www.kaggle.com/datasets/stevenpeutz/misinformation-fake-news-text-dataset-79k?resource=download) and move it into the `notebook/data-set` directory.
+- Train and serialize the model.
 
 ## Development Requirements
 
@@ -100,33 +110,6 @@ make run
 ## Access Redocs Documentation
 
 > <http://localhost:8000/redocs>
-
-## Deployments
-
-### Deta Micros
-
-You'll need to create a Deta account to use the Deta version of the APIs.
-
-[![Deploy on Deta](https://button.deta.dev/1/svg)](https://go.deta.dev/deploy?repo=https://github.com/wiseaidev/truth-guard)
-
-### Heroku
-
-This button will only deploy the server.
-
-[![Deploy on Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/wiseaidev/truth-guard)
-
-## Core Dependencies
-
-The following packages are the main dependencies used to build this project:
-
-- [`python`](https://github.com/python/cpython)
-- [`fastapi`](https://github.com/tiangolo/fastapi)
-- [`uvicorn`](https://github.com/encode/uvicorn)
-- [`pydantic`](https://github.com/pydantic/pydantic)
-- [`odmantic`](https://github.com/art049/odmantic)
-- [`PyJWT`](https://github.com/jpadilla/pyjwt)
-- [`passlib`](https://passlib.readthedocs.io/en/stable/index.html)
-- [`python-multipart`](https://github.com/andrew-d/python-multipart)
 
 ## License
 
